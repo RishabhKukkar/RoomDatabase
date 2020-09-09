@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddStudentFragment">
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/mbtAddStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:text="@string/add_student"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_marginEnd="@dimen/dp_40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etStudentStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="@string/abce102"
+            android:hint="@string/standard"
+            android:singleLine="true"
+            android:textColor="@android:color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_marginEnd="@dimen/dp_40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etStudentDivision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="@string/abce102"
+            android:hint="@string/division"
+            android:singleLine="true"
+            android:textColor="@android:color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginEnd="@dimen/dp_40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="@string/abce102"
+            android:hint="@string/student_name"
+            android:singleLine="true"
+            android:textColor="@android:color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

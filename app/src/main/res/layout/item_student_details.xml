@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp_8"
+    android:layout_marginTop="@dimen/dp_4"
+    android:layout_marginEnd="@dimen/dp_8"
+    android:layout_marginBottom="@dimen/dp_4"
+    android:backgroundTint="@android:color/white"
+    android:elevation="@dimen/dp_4"
+    app:cardCornerRadius="@dimen/dp_5"
+    app:cardElevation="@dimen/dp_4">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGray">
+
+        <ImageView
+            android:id="@+id/ivItemStudentDelete"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:src="@drawable/ic_delete_24"
+            app:layout_constraintBottom_toBottomOf="@+id/tvItemStudentName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemStudentName">
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_4"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/RecyclerViewSubTitleView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:text="@string/standard" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvItemStudentStandard"
+                    style="@style/CartListViewPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/standard" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_4"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/RecyclerViewSubTitleView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:text="@string/division"
+                    android:textStyle="normal" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvItemStudentDivision"
+                    style="@style/CartListViewPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/division" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnItemViewStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_4"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginEnd="@dimen/dp_4"
+            android:layout_marginBottom="@dimen/dp_4"
+            android:backgroundTint="@android:color/white"
+            android:text="@string/view_student"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            app:cornerRadius="@dimen/dp_8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvItemStudentName"
+            style="@style/TextViewTitle"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_4"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginEnd="8dp"
+            android:text="@string/student_name"
+            android:textSize="@dimen/sp_18"
+            app:layout_constraintEnd_toStartOf="@+id/ivItemStudentDelete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

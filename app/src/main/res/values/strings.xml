@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Room Database</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="view_student">View Student</string>
+    <string name="student_name">Student Name</string>
+    <string name="standard">Standard</string>
+    <string name="division">Division</string>
+    <string name="abce102">abcdefghijklmnopqrstwxyz0123456789ABCDEFGHIJKLMNOPQRSTWXYZ </string>
+    <string name="add_student">Add Student</string>
+    <string name="please_enter_student_name">Please enter Student Name</string>
+    <string name="please_enter_student_standard">Please enter Student Standard</string>
+    <string name="please_enter_student_division">Please enter Student Division</string>
+    <string name="update_student">Update Student</string>
+</resources>
